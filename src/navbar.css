@@ -1,0 +1,114 @@
+/* General Navbar Styles */
+.navbar {
+  padding: 0.5rem 1rem;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -809px;
+  margin-top: 14px;
+  height: 40px;
+  background: transparent; /* Make the navbar background transparent */
+}
+
+/* Container for the specific nav-items */
+.navbar-section {
+  display: flex;
+  background: linear-gradient(90deg, #000000, #1c1c1c); /* Gradient black background */
+  padding: 0 10px; /* Adjust padding as needed */
+  border-radius: 20px; /* Optional: Add some rounding for better appearance */
+}
+
+/* Navbar brand (logo) */
+.navbar-brand {
+  position: absolute;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.toolbar-icon {
+  height: 40px;
+  width: auto;
+  margin-left: 9rem;
+}
+
+/* Navbar links */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  list-style: none;
+  padding: 0;
+  margin-left: 5rem;
+}
+
+/* Individual nav-item styles */
+.nav-item {
+  margin-left: 0; /* Remove space between items */
+  transition: transform 0.3s ease; /* Transition for scaling effect */
+}
+
+/* Hover effect for nav-item */
+.nav-item:hover {
+  transform: scale(1.1); /* Zoom in effect on li item */
+}
+
+/* Styling links */
+.nav-link {
+  color: #ffffff; /* White text color to contrast with the gradient background */
+  text-decoration: none; /* Ensures no underline */
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition effects */
+  display: inline-block; /* Required for scaling effect */
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+  color: #00e6e6; /* Change text color */
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.7); /* Glowing effect */
+}
+
+/* Remove underline when link is active */
+.active .nav-link {
+  color: #00e6e6;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Style for the text next to the logo */
+.navbar-text {
+  margin-left: 0.8rem;
+  font-size: 18px;
+  color: #f6f6f6; /* Use a visible text color */
+  text-decoration: none; /* Ensures no underline */
+  font-weight: bold; /* Makes the text bold */
+  font-family: 'Poppins', sans-serif; /* Stylish font */
+  letter-spacing: 0.5px; /* Adds spacing between letters */
+  text-transform: uppercase; /* Converts text to uppercase */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  background: transparent; /* Gradient background */
+  padding: 0.2rem 0.5rem; /* Adds padding for a better look */
+  border-radius: 0.3rem; /* Rounds the corners */
+  border-bottom: none; /* Ensures no underline */
+  outline: none; /* Ensures no outline */
+  box-shadow: none; /* Ensures no shadow */
+}

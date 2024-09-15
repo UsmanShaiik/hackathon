@@ -1,0 +1,65 @@
+/* Global Styles (if not already defined) */
+html, body {
+    height: 100%; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+body {
+    overflow-y: auto; /* Enable vertical scrolling for the entire page */
+}
+
+/* About Page Styles */
+.about-page {
+    padding: 20px; /* Optional: Add padding if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the about page take up the full viewport height */
+}
+
+.about-page .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the container */
+    justify-content: flex-start; /* Align content to the top of the container */
+    width: 80%; 
+    height: 50vh; /* Adjust height as needed */
+    max-width: 1400px; /* Adjust max-width as needed */
+    max-height: 90vh; /* Set a maximum height to enable scrolling if content exceeds this height */
+    margin-top: -230px; /* Center the container horizontally and add top margin */
+    padding: 20px; /* Add padding to all sides of the container */
+    background-color: white; /* Ensure background color is white */
+    color: black; /* Ensure text color is black */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds container height */
+    overflow-x: hidden; /* Hide horizontal overflow to prevent side scrolling */
+    position: relative; /* Ensure proper positioning context */
+}
+
+.about-page .container h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Center align heading */
+}
+
+.about-page .container p {
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove any additional padding */
+    width: 100%; /* Ensure paragraph takes full width of container */
+    color: black;
+    overflow-wrap: break-word; /* Break long words and wrap text within the container */
+    word-wrap: break-word; /* Ensure compatibility with older browsers */
+    position: relative; /* For pseudo-element positioning */
+    display: inline-block; /* Ensure the underline animation works correctly */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.about-page .container p:hover {
+    color: rgb(6, 119, 163); /* Change text color on hover */
+    transform: scale(1.01); /* Light zoom-in effect */
+}

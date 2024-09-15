@@ -1,0 +1,50 @@
+/* src/Footer.css */
+/* Footer Styles */
+.footer {
+  background: linear-gradient(to right, #242423, #272524); /* Gradient background */
+  color: #f8f8f8;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Grid layout without altering height */
+  gap: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #080808; /* Dark text color for links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  margin-top: 10px;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Keeps links in grid without size change */
+  gap: 10px;
+  justify-items: center;
+}

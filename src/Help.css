@@ -1,0 +1,24 @@
+/* src/components/Help.css */
+.help-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .help-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .help-questions {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .help-questions li {
+    margin-bottom: 10px;
+  }
+  

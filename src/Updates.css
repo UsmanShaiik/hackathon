@@ -1,0 +1,89 @@
+/* src/Updates.css */
+
+/* Container for the updates section */
+.updates-wrapper {
+    position: fixed; /* Keep the icon fixed in the viewport */
+    top: 10px; /* Adjust top position */
+    right: 10px; /* Adjust right position */
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+  
+  /* Updates button styling */
+  .updates-button {
+    color: rgb(3, 3, 3);
+    background-color: rgba(0, 255, 255, 0.6); /* Glowing color */
+    border-radius: 50%; /* Perfectly circular shape */
+    padding: 10px; /* Add padding for consistent spacing */
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6); /* Glowing effect */
+    transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition effects */
+    height: 50px; /* Set height */
+    width: 50px; /* Set width to match height for a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+  }
+  
+  /* Hover effect for the updates button */
+  .updates-button:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.9); /* Intensify the glow on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Updates container styling */
+  .updates-container {
+    position: absolute;
+    top: 60px; /* Adjust if needed */
+    right: 0;
+    background-color: rgba(248, 248, 248, 0.6); /* Transparent background with glow */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 300px;
+    animation: popUp 0.5s ease; /* Apply pop-up transition effect */
+  }
+  
+  /* Title styling */
+  .updates-container h4 {
+    margin-top: 0;
+    color: rgb(0, 0, 0); /* White text color */
+    text-align: center;
+    animation: glowText 0.5s ease-in-out 2; /* Glowing effect for the title */
+  }
+  
+  /* List styling */
+  .updates-container ul {
+    padding-left: 20px;
+  }
+  
+  /* List item styling */
+  .updates-container li {
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0); /* White text color */
+    animation: glowText 0.5s ease-in-out 2; /* Glowing effect for the list items */
+  }
+  
+  /* Glowing text effect */
+  @keyframes glowText {
+    0%, 100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+    }
+    50% {
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    }
+  }
+  
+  /* Pop-up transition effect */
+  @keyframes popUp {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
